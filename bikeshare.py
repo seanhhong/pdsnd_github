@@ -1,3 +1,5 @@
+#bike share project for udacity nano degree program
+
 import time
 import pandas as pd
 import numpy as np
