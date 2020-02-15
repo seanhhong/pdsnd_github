@@ -1,15 +1,14 @@
 ### Date created
-Include the date you created this project and README file.
+2020 February 14
 
 ### Project Title
-Replace the Project Title
+Bike share analysis with python
 
 ### Description
-Describe what your project is about and what it does
+Analytical summaries of bike share program in the three cities.
 
 ### Files used
-Include the files used
+bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+udacity nano degree project
