@@ -80,7 +80,6 @@ def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
-    start_time = time.time()
 
     # display the most common month
     pop_month = df['month'].mode()[0]
@@ -94,8 +93,6 @@ def time_stats(df):
     pop_hour = df['hour'].mode()[0]
     print('Most popular hour is {}:00'.format(pop_hour))
 
-
-    print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -103,7 +100,6 @@ def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
-    start_time = time.time()
 
     # display most commonly used start station
     print('Most popular start station is {}'.format(df['Start Station'].mode()[0]))
@@ -118,8 +114,6 @@ def station_stats(df):
     df['Start End'] = start_end
     print('Most popular trip is {}'.format(df['Start End'].mode()[0]))
 
-
-    print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 def sec_to_minute_hour(sec):
@@ -140,7 +134,6 @@ def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
     print('\nCalculating Trip Duration...\n')
-    start_time = time.time()
 
     # display total travel time
     print('total travel time is ' + sec_to_minute_hour(df['Trip Duration'].sum()))
@@ -148,7 +141,6 @@ def trip_duration_stats(df):
     # display mean travel time
     print('average travel time is ' + sec_to_minute_hour(df['Trip Duration'].mean()))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -156,7 +148,6 @@ def user_stats(df):
     """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
-    start_time = time.time()
 
     # Display counts of user types
     print('Following is the list of user type: ')
@@ -179,7 +170,6 @@ def user_stats(df):
         print('Youngest birth year is {}'.format(int(bd_sort[-1])))
     except KeyError:
         print('There is no birth year information.')
-    print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 def show_raw(df):
