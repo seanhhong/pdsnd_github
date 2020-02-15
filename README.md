@@ -5,7 +5,7 @@
 Bike share analysis with python
 
 ### Description
-Analytical summaries of bike share program in the three cities.
+Analytical summaries of bike share program in the three cities
 
 ### Files used
 bikeshare.py
