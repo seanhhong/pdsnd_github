@@ -195,7 +195,6 @@ def main():
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
-        print(df.head(10))
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
